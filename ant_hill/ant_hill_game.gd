@@ -27,7 +27,7 @@ func _on_spawn_harvest() -> void:
 	if sugar < harvest_cost:
 		return
 	sugar -= harvest_cost
-	harvest_cost += 4
+	harvest_cost += 1
 	var ant = harvest_ant_scene.instantiate()
 	ant.position = anthill_position
 	ant.game = self
@@ -39,7 +39,7 @@ func _on_spawn_carry() -> void:
 	if sugar < carry_cost:
 		return
 	sugar -= carry_cost
-	carry_cost += 4
+	carry_cost += 1
 	var ant = carry_ant_scene.instantiate()
 	ant.position = anthill_position
 	ant.game = self
