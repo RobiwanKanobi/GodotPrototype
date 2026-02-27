@@ -40,7 +40,7 @@ jobs:
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "${{ steps.export.outputs.build_directory }}/Builds"
+          path: "${{ steps.export.outputs.build_directory }}/Web"
 
   deploy:
     needs: build
